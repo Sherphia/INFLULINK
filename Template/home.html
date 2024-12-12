@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to InfluLink - An Influencer Engagement and Sponsorship Coordination Platform</h1>
+    <p class="lead">A platform to connect Sponsors and Influencers for successful engagement and sponsorship coordination.</p>
+    <hr class="my-4">
+    <p>Our platform helps sponsors get their product/service advertised and influencers to earn monetary benefits.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('register') }}" role="button">Get Started</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/sponsors.jpg') }}" class="card-img-top" alt="Sponsors" style="width: 90%; height: 260px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Sponsors</h5>
+                <p class="card-text">Create campaigns, find influencers, and track your advertisements.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/influencers.jpg') }}" class="card-img-top" alt="Influencers" style="width: 100%; height: 260px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Influencers</h5>
+                <p class="card-text">Find sponsorship opportunities and earn money through advertisements.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/admin.jpg') }}" class="card-img-top" alt="Admin" style="width: 100%; height: 260px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Admin</h5>
+                <p class="card-text">Monitor users, campaigns, and ensure everything runs smoothly.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
